@@ -67,14 +67,26 @@ if resume:
 
 all_skills = list(set(selected_skills + resume_skills))
 
-if st.button("Get Career Recommendations"):
-    if not all_skills:
+if st.button("🚀 Get Career Recommendations"):
+
+    if len(all_skills) == 0:
         st.warning("Please select skills or upload a resume.")
+
     else:
         scores = {}
+
         for career, info in CAREERS.items():
             match = len(set(all_skills).intersection(info["skills"]))
             scores[career] = match
+
+        # Create chart data
+        chart_data = pd.DataFrame({
+            "Career": list(scores.keys()),
+            "Match Score": list(scores.values())
+        })
+
+        st.subheader("📊 Career Match Scores")
+        st.bar_chart(chart_data.set_index("Career"))
 
         ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
