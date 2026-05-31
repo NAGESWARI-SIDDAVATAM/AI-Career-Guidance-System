@@ -95,23 +95,17 @@ streamlit run app.py
 
 ### Home Page
 
-Add screenshot here
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5ca1e5a5-6a4e-4853-afa2-5e1999f0cede" />
 
 ### Career Recommendation Dashboard
 
-Add screenshot here
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dad5b46c-c225-4713-8526-a564c0abc20f" />
+
 
 ### Career Match Visualization
 
-Add screenshot here
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e92b91b2-4788-41ac-a5f8-cfff7cfc7f21" />
 
-## 🎥 Demo Video
-
-Add your project demo video link here.
-
-Example:
-
-[Watch Demo Video](YOUR_VIDEO_LINK)
 
 ## 🔮 Future Enhancements
 
